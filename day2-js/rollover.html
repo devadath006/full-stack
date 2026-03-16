@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rollover Menu</title>
+        <script>
+            function mouseOver(element){
+                element.style.color="black";
+                element.style.backgroundColor="green";
+            }
+            function mouseOut(element){
+                element.style.color="black";
+                element.style.backgroundColor="lightgray";
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Rollover Menu using Javascript</h2>
+        <div
+            onmouseover="mouseOver(this)"
+            onmouseout="mouseOut(this)"
+            style="width:200px; padding:10px;background-color:lightblue;cursor:pointer;">Home
+        </div>
+
+        <div
+            onmouseover="mouseOver(this)"
+            onmouseout="mouseOut(this)"
+            style="width:200px; padding:10px;background-color:lightblue;cursor:pointer;">About
+        </div>
+
+         <div
+            onmouseover="mouseOver(this)"
+            onmouseout="mouseOut(this)"
+            style="width:200px; padding:10px;background-color:lightblue;cursor:pointer;">Contact
+        </div>
+    </body>
+</html>

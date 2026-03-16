@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rollover Menu without CSS</title>
+
+    <script>
+        function showMenu(){
+            document.getElementById("submenu").style.display = "block";
+        }
+
+        function hideMenu(){
+            document.getElementById("submenu").style.display = "none";
+        }
+    </script>
+
+</head>
+
+<body>
+
+<h2>Rollover Menu Example</h2>
+
+<ul>
+    <li>Home</li>
+
+    <li onmouseover="showMenu()" onmouseout="hideMenu()">
+        Services
+        <ul id="submenu" style="display:none;">
+            <li>Web Design</li>
+            <li>App Development</li>
+            <li>SEO</li>
+        </ul>
+    </li>
+
+    <li>About</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Embedding in Javascript</title>
+    </head>
+    <body>
+        <h1>Embedding in JavaScript</h1>
+
+        <h3 style="color: brown;">Inline JavaScript</h3>
+        <button onclick="alert('Hello,This is inline Js')">Click To See Inline JavaScript</button>
+        <hr>
+
+        <h3 style="color: blue;">Internal Javascript</h3>
+        <button onclick="sayHello()">Click To See Internal JavaScript</button>
+        <script>
+            function sayHello(){
+                alert('Hello,This is Internal Js');
+            }
+        </script>
+        <hr>
+        <h3 style="color: green;">External JavaScript</h3>
+        <button onclick="showMessage()">Click To See External JavaScript</button>
+        <script src="emb.js"></script>
+    </body>
+</html>
