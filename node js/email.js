@@ -3,13 +3,13 @@ const transporter=nodemailer.createTransport({
     service:'gmail',
     auth:{
         user:'devadathme@gmail.com',
-        pass:'vycmxpmnoeyhivcr'
+        pass:''
     }
 });
 
 const mailOptions={
     from:'devadathme@gmail.com',
-    to:'devadathme@gmail.com',
+    to:'lekshmijskishor@gmail.com',
     subject:'testing',
     text:'This email is sent using Node.js Nodemailer service.'
 };
