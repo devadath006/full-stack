@@ -1,15 +1,18 @@
 const express=require('express');
 const app=express();
-const PORT=4000;
+const PORT=9000;
+
 app.get('/',(req,res)=>{
-    res.send('<h1>Welcome to the Home Page<h1>');
+    res.send('ith home thha');
 });
+
 app.get('/about',(req,res)=>{
-    res.send('<h1>Welcome to About Page<h1>');
-});
+    res.send('ith about thha');
+})
+
 app.get('/contact',(req,res)=>{
-    res.send('<h1>Feel free to reach us</h1>');
+    res.send('ith contact thha')
 });
 app.listen(PORT,()=>{
-    console.log(`Server is listening at http://localhost:${PORT}`);
+    console.log(`Server is runnin on http://localhost:${PORT}`);
 });
